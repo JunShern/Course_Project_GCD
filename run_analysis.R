@@ -50,7 +50,7 @@ factors = list(df$Subject,df$Activity)
 splitframes = split(df, factors)
 splitframes = sapply(splitframes, colMeans)
 # Rejoin everything into a new tidy data frame
-df2 = data.frame(t(splitframes)) # t will transpose the matrix so that columns are variables
+df2 = data.frame(t(splitframes)) # t will transpose the matrix
 # Convert levels in Activity back to factor labels
 df2$Activity = as.factor(df2$Activity)
 levels(df2$Activity) = activityLabels$V2
