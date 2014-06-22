@@ -12,6 +12,7 @@ The following information has been extracted from the UCI HAR website for the da
 
 * The sensor signals (accelerometer and gyroscope) were pre-processed by applying noise filters and then sampled in fixed-width sliding windows of 2.56 sec and 50% overlap (128 readings/window). The sensor acceleration signal, which has gravitational and body motion components, was separated using a Butterworth low-pass filter into body acceleration and gravity. The gravitational force is assumed to have only low frequency components, therefore a filter with 0.3 Hz cutoff frequency was used. From each window, a vector of features was obtained by calculating variables from the time and frequency domain. 
 
+
 ##Variables
 A complete list of all the features for which measurements were taken can be found in "UCI HAR Dataset/features.txt".
 
@@ -35,7 +36,7 @@ The following explanations are meant to be used as a reference to the run_analys
 2. In row 19, we use the feature names found in "UCI HAR Dataset/features.txt" to rename the column variables for our data frame. 
 (Lines 18-19)
 
-3. As mentioned above in "About the data", we are only interested in keeping the mean and standard deviation readings, so we use the grep() function to help us pick out the columns with "mean" or "std" in the data, and subset only these columns into our data frame. 
+3. As mentioned above in "Variables", we are only interested in keeping the mean and standard deviation readings, so we use the grep() function to help us pick out the columns with "mean" or "std" in the data, and subset only these columns into our data frame. 
 	* The majority of the variables use mean and std as a separate parameter at the end of their names, but there are a few variables: gravityMean, tBodyAccMean, tBodyAccJerkMean, tBodyGyroMean, and tBodyGyroJerkMean which are named a little differently. These variables should not be left out because they offer other interesting measurements which are not covered in the variables. Thus, special care is taken to pass the "ignore.case=TRUE" parameters to the grep() functions so that these variables with an uppercase "Mean" are not ignored when matching for the pattern "mean". 
 (Lines 21-24)
 
