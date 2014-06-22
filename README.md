@@ -2,6 +2,13 @@
 
 This project tidies up an existing dataset of sensor data, and performs basic analysis on the data.
 
+##Quickstart: How to use this
+To use the script, you will need the data included in the UCI HAR folder, as well as the run_analysis.R file. It is recommended that you simply fork this repository and clone it on to your computer so you can run it locally.
+
+Once you have the necessary files, open the run_analysis.R file in RStudio or your preferred R development environment, and run the script. Make sure that the UCI HAR folder is in the same directory you are running the script from. 
+
+You will find a dataframe "df2" in your environment after running the script - this is the tidy dataset that is the output of this script. 
+
 ##File Overview
 The repository contains:
 
