@@ -6,7 +6,8 @@ This project tidies up an existing dataset of sensor data, and performs basic an
 The repository contains:
 
 1. UCI HAR Dataset 
-	* This folder is taken directly from http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones, and contains all the sensor data which is used in this project.
+	* This folder is taken directly from [a here], and contains all the sensor data which is used in this project.
+[1]: http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
 
 2. run_analysis.R 
 	* This script performs all the work on the dataset, and will be explored further in the section "Script Functions" below.
