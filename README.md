@@ -4,23 +4,24 @@ This project tidies up an existing dataset of sensor data, and performs basic an
 
 ##File Overview
 The repository contains:
+
 1. UCI HAR Dataset 
-* This folder is taken directly from http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones, and contains all the sensor data which is used in this project.
+	* This folder is taken directly from http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones, and contains all the sensor data which is used in this project.
 
 2. run_analysis.R 
-* This script performs all the work on the dataset, and will be explored further in the section "Script Functions" below.
+	* This script performs all the work on the dataset, and will be explored further in the section "Script Functions" below.
 
 3. tidydata.txt 
-* This is the output of run_analysis.R. It is a space-separated data file produced using the "write.table()" function in R, and has been tested to be easily read into a data frame in R using 
+	* This is the output of run_analysis.R. It is a space-separated data file produced using the "write.table()" function in R, and has been tested to be easily read into a data frame in R using 
 ~~~~
 read.table("tidydata.txt")
 ~~~~
 
 4. README.md 
-* This file you are reading, which summarizes the project.
+	* This file you are reading, which summarizes the project.
 
 5. CodeBook.md 
-* A markdown document which describes in detail the variables, data and work performed to clean up the data.
+	* A markdown document which describes in detail the variables, data and work performed to clean up the data.
 
 
 ##Script Functions
